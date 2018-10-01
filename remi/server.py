@@ -774,6 +774,8 @@ class App(BaseHTTPRequestHandler, object):
         self.end_headers()
 
     def do_GET(self):
+        self._log.debug("do_GET:%s"%str(self.headers))
+
         # check here request header to identify the type of req, if http or ws
         # if this is a ws req, instance a ws handler, add it to App's ws list, return
         if "Upgrade" in self.headers:
