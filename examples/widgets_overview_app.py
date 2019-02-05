@@ -15,7 +15,7 @@
 import remi.gui as gui
 from remi import App
 from threading import Timer
-from cli import start_app
+from .cli import start_app
 
 
 class MyApp(App):
