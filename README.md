@@ -335,7 +335,7 @@ You then need to ensure that this is in your PATH. Something like:
 export PATH=$PATH:./node_modules/.bin/
 ```
 
-The tests take screenshots which are written to files in a `generated` directory. This will fail if the directory does not exist. So you should create it before the tests are run.
+The tests take screenshots which are written to files in a `generated` directory.
 
 Finally to run the tests:
 
